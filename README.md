@@ -7,6 +7,7 @@ Function acquired:
   2. Accept .txt as upload content
   3. Using default font-type
   4. Generate the final menu using both files from upload/ and default files
+
 Function to be acquired:
   1. Allow user to choose font-type
   2. Calculate the location of content base on the image file size
