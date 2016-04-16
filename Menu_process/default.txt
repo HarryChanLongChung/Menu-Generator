@@ -1,0 +1,19 @@
+t:40
+d:30
+p:35
+=end of define=
+(t)Dish Name 1
+(d)detail of dish 1
+(p)57
+(t)Dish Name 2
+(d)detail of dish 2
+(p)66
+(t)Dish Name 3
+(d)detail of dish 3
+(p)54
+(t)Dish Name 4
+(d)detail of dish 4
+(p)98
+(t)Dish Name 5
+(d)detail of dish 5
+(p)122
