@@ -11,6 +11,24 @@
 	$imgLocat = "upload/menu.jpg";
 	$txtLocat = "upload/content.txt";
 
+	if (isset($_POST['fontSelection'])) {
+		$fontOption = $_POST['fontSelection'];
+		switch ($fontOption) {
+			case "1":
+				$fontname = 'font/Lobster-Regular.ttf';
+				break;
+			case "2":
+				$fontname = 'font/PassionOne-Regular.ttf';
+				break;
+			case "3":
+				$fontname = 'font/PoiretOne-Regular.ttf';
+				break;
+			case "4":
+				$fontname = 'font/RobotoCondensed-Regular.ttf';
+				break;
+		}
+	}
+
 	$text_content = array();   
 	$unit = array(
 		array(
@@ -45,12 +63,12 @@
 		// loop through each set	
 		foreach ($text_content as $set){
 				// place the Dish name
-				$x = 100;
+				$x = imagesx($im)*0.1;
 				imagettftext($im, $set[0]['font-size'], 0, $x, $y+$i, $black, $fontname,$set[0]['Dishname']);	
-				$x = 750;
+				$x = imagesx($im)-imagesx($im)*0.2;
 				imagettftext($im, $set[2]['font-size'], 0, $x, $y+$i, $black, $fontname,$set[2]['Prize']);
 				$i = $i+$set[0]['font-size']*1.2;	
-				$x = 100;
+				$x = imagesx($im)*0.1;
 				imagettftext($im, $set[1]['font-size'], 0, $x, $y+$i, $black, $fontname,$set[1]['Detail']);
 				$i = $i+100;
 		}
@@ -184,10 +202,8 @@
 		$txtlocation = "default.txt";
 	}
 
-
 	// run the script to create the image
 	$text_content=set_text_content($txtlocation);
-
 	$filename = create_image($text_content,400,$imglocation);
 ?>
 
@@ -233,7 +249,14 @@
     				<input type="file" name="ImgFile" id="imgToUpload"><br/>
     			<label>Select text file to upload:</label>
     				<input type="file" name="TxtFile" id="txtToUpload"><br/>
-    				<input type="submit" value="Upload Image" name="submit">
+    			<label>Select the wanted font:</label>
+    			<select name="fontSelection">
+  					<option value="1">Font 1</option>
+  					<option value="2">Font 2</option>
+  					<option value="3">Font 3</option>
+  					<option value="4">Font 4</option>
+				</select><br/>
+    				<input type="submit" value="Renew Image" name="submit">
 			</form>
 		</div>
 
