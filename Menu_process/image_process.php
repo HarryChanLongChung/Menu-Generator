@@ -245,20 +245,29 @@
 		<p>Upload the image you want to be the background image.</p>
 		<div class="dynamic-form">
 			<form action="" method="post" enctype="multipart/form-data">
-    			<label>Select image to upload: </label>
-    				<input type="file" name="ImgFile" id="imgToUpload"><br/>
-    			<label>Select text file to upload:</label>
-    				<input type="file" name="TxtFile" id="txtToUpload"><br/>
-    			<label>Select the wanted font:</label>
-    			<select name="fontSelection">
-  					<option value="1">Font 1</option>
-  					<option value="2">Font 2</option>
-  					<option value="3">Font 3</option>
-  					<option value="4">Font 4</option>
-				</select><br/>
-    				<input type="submit" value="Renew Image" name="submit">
+				<table>
+					<tr>
+    					<td><label>Select image to upload: </label></td>
+    					<td><input type="file" name="ImgFile" id="imgToUpload"><br/></td>
+  					</tr>
+  					<tr>
+    					<td><label>Select text file to upload:</label></td>
+    					<td><input type="file" name="TxtFile" id="txtToUpload"><br/></td>
+  					</tr>
+  					<tr>
+    					<td><label>Select the wanted font:</label></td>
+    					<td>
+    						<select name="fontSelection">
+  							<option value="1">Font 1</option>
+  							<option value="2">Font 2</option>
+  							<option value="3">Font 3</option>
+  							<option value="4">Font 4</option>
+							</select>
+						</td>
+  					</tr>
+				</table>
+				<input type="submit" value="Renew Image" name="submit">
 			</form>
 		</div>
-
 	</body>
 </html>
