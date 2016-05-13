@@ -16,3 +16,7 @@ Function to be acquired:
 Function acquired:
   1. Allow user to use the selection to choose desired font-type
   2. Apply text to the image according to certain algorthim
+
+# 2016/04/25
+Interface changing:
+  1. Fix unnatural alignment in the upload form
