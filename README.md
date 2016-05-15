@@ -22,12 +22,12 @@ Interface changing:
   1. Fix unnatural alignment in the upload form
 
 # Demo Video:
-  https://www.youtube.com/watch?v=R_oTrRscYZg
+  [Youtube Video](https://www.youtube.com/watch?v=R_oTrRscYZg)
 
 # Function explaination:
   1. this website will use your uploaded iamge as the background image for the menu
   2. there is five default font-types included under the 'font' file 
-  3. the .txt file need to under certain format
+  3. the .txt file need to under certain format:
       t:40
       d:30
       p:35
