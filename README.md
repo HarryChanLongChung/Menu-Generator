@@ -22,8 +22,10 @@ Using .php to accept uploaded image and text file to generate a menu.
   4. the fisrt part is used to define all font size
   5. the '=end of define=' line is used as a format to indicate start of the content
   6. any text after the "(t)" or "(d)" or "(p)" will be shown on the image as the size declared above
+  
 # Development Log
-##2016/04/16
+
+## 2016/04/16
 Function acquired:
   1. Accept .jpg as upload image
   2. Accept .txt as upload content
