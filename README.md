@@ -23,3 +23,18 @@ Interface changing:
 
 # Demo Video:
   https://www.youtube.com/watch?v=R_oTrRscYZg
+
+# Function explaination:
+  1. this website will use your uploaded iamge as the background image for the menu
+  2. there is five default font-types included under the 'font' file 
+  3. the .txt file need to under certain format
+      t:40
+      d:30
+      p:35
+      =end of define=
+      (t)Dish Name 1
+      (d)detail of dish 1
+      (p)57
+  4. the fisrt part is used to define all font size
+  5. the '=end of define=' line is used as a format to indicate start of the content
+  6. any text after the "(t)" or "(d)" or "(p)" will be shown on the image as the size declared above
