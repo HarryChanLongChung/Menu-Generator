@@ -30,17 +30,11 @@ Interface changing:
   3. the .txt file need to under certain format:
   
   t:40
-
   d:30
-  
   p:35
-  
   =end of define=
-  
   (t)Dish Name 1
-  
   (d)detail of dish 1
-  
   (p)57
 
   4. the fisrt part is used to define all font size
